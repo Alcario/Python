@@ -52,7 +52,6 @@ check2 = []
 check3 = []
 finalcheck = []
 
-# check if all sub-tableros (3x3) are good
 for i in range(0,9):
     prueba = [1,2,3,4,5,6,7,8,9]
     for fila in subtab[i]:
@@ -64,7 +63,6 @@ for i in range(0,9):
 if len(check1) == 81:
     finalcheck.append(1)
 
-# check if all filas are good
 for filas in tablero:
     prueba = [1,2,3,4,5,6,7,8,9]
     for caracter in filas:
@@ -76,7 +74,6 @@ for filas in tablero:
 if len(check2) == 81:
     finalcheck.append(1)
 
-# check if all colum are good
 for column in colum:
     prueba = [1,2,3,4,5,6,7,8,9]
     for caracter in column:
